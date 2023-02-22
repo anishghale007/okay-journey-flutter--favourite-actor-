@@ -5,18 +5,22 @@ class CustomFormField extends StatelessWidget {
   final String labelText;
   final String hintText;
   final TextInputType keyboardType;
+  final FormFieldValidator<String>? validator;
 
   CustomFormField(
       {required this.controller,
       required this.labelText,
       required this.hintText,
-      required this.keyboardType});
+      required this.keyboardType,
+      required this.validator,
+      });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 80),
       child: TextFormField(
+        validator: validator,
         keyboardType: keyboardType,
         controller: controller,
         maxLines: 1,
