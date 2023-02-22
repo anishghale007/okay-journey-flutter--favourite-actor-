@@ -1,16 +1,21 @@
-# image_saver
+# Favourite Actor Saver
 
-A new Flutter project.
+**Question 2:** Create an app to enter and save the favorite actor's name and image.  The app should display the actor's image and name on another page.
 
-## Getting Started
+## Description
 
-This project is a starting point for a Flutter application.
+The app consists of two pages: Form Page and My Favourite Actor Page. You can easily navigate through the pages by using the bottom navigation bar. After filling up the form, the app will save the actor's name and image locally using the <code>path_provider</code> package. After the data is successfully saved, you can view the recently added data in the Favourite Actor page. Note that it doesn't allow Update and Delete operation. Only **CREATE** and **READ** function has been implemented. 
 
-A few resources to get you started if this is your first Flutter project:
+## Packages used
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* flutter_riverpod: ^2.2.0
+* image_picker: ^0.8.6+2
+* dotted_border: ^2.0.0+2
+* path_provider: ^2.0.12
+* timeago: ^3.4.0
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+
+
+
+
